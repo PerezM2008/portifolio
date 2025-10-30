@@ -1,0 +1,66 @@
+ :root {
+
+ }
+/********** HEADER **********/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    width: 1920px;
+    height: auto;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(121, 121, 207);
+    justify-content: center;
+    position: relative;
+    
+}
+
+ul{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;     
+    gap: 52px;
+    list-style-type: none;
+}
+ul :hover{
+    transition: all 0.5s ease;
+    color: aqua;
+    border-radius: 5px;
+}
+/* .redes{
+    display: flex;
+    margin-left: 100%;
+    align-items: center;
+    padding-right: 100px;
+    gap: 30px;
+    position: absolute;
+    z-index: 2;
+
+} */
+
+ /********** SECTION - HOME **********/
+ 
+ .home {
+    display: flex;
+    width: auto;
+    height: 1080px;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ .dev {
+    background-color: aqua;
+    border-color: rgb(2, 2, 85);
+ }
