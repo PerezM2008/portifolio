@@ -1,6 +1,3 @@
- :root {
-
- }
 /********** HEADER **********/
 
 *{
@@ -8,6 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     display: flex;
     width: 1920px;
@@ -18,10 +20,9 @@ header{
     display: flex;
     width: 100%;
     height: 80px;
-    background-color: rgb(121, 121, 207);
     justify-content: center;
-    position: relative;
-    
+    position: fixed;
+    z-index: 3;
 }
 
 ul{
@@ -31,6 +32,7 @@ ul{
     justify-content: space-between;     
     gap: 52px;
     list-style-type: none;
+    color: antiquewhite;
 }
 ul :hover{
     transition: all 0.5s ease;
@@ -44,7 +46,7 @@ ul :hover{
     padding-right: 100px;
     gap: 30px;
     position: absolute;
-    z-index: 2;
+        z-index: 2;
 
 } */
 
@@ -52,15 +54,60 @@ ul :hover{
  
  .home {
     display: flex;
-    width: auto;
+    max-width: 100%;
     height: 1080px;
-    background-color: blue;
     align-items: center;
     justify-content: center;
     flex-direction: column;
  }
 
  .dev {
-    background-color: aqua;
-    border-color: rgb(2, 2, 85);
+    background-color: rgba(0, 255, 234, 0.5);
+    color: aqua;
+    border-radius: 45px;
+    padding: 15px 40px;
+    text-align: center;
+    border: 2px solid #00655D;
+ }
+
+ .text-home {
+    position:absolute;
+    z-index: 2;
+    font-size: clamp(15px, 3vw, 25px);
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+ }
+ .video-home {
+    max-width: 100%;
+    min-height: 100%;
+    position: absolute ;
+ }  
+
+ /********** SECTION 2 **********/
+
+ .sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto ;
+    height: 1080px;
+    background-color: aquamarine;
+ }
+ .info {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+ }
+
+ .biografia {
+    display: flex;
+    flex-direction: column;
+    width: 30vh;
+ }
+ 
+ .perfil{
+    display: flex;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 30px;
  }
