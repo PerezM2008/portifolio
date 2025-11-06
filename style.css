@@ -42,6 +42,11 @@ ul :hover {
     border-radius: 5px;
 }
 
+.link{
+    color: #fafafa;
+    text-decoration: none;
+}
+
 
 /* .redes{
     display: flex;
@@ -100,8 +105,22 @@ ul :hover {
     justify-content: center;
     width: auto;
     height: 1080px;
+    position: relative;
     background-color: aquamarine;
     background-image: url(imagens-portifolio/sessao1.png);
+}
+
+.sobre::before{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    content: '';
+    position: absolute;
+    background-color: rgba(15, 15, 15, 0.5);
+    z-index: 1;
+    
+
+
 }
 
 .info {
@@ -109,6 +128,7 @@ ul :hover {
     gap: 50px;
     color: #fafafa;
     text-shadow: 1px 1px 3.5px #0f0f0f;
+    z-index: 2;
 }
 
 .biografia {
@@ -130,8 +150,76 @@ ul :hover {
 /* ********** SECTION 3 ********** */
 
 .projetos {
-    display: flex;
-    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    gap:20px;
+    width: 100%;
     height: 1080px;
-    background-color: #00655D;
+    background-image: url(./imagens-portifolio/sessao3.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.projetos::before{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    content: '';
+    position: absolute;
+    background-color: rgba(15, 15, 15, 0.5);
+    z-index: 1;
+}
+
+.card {
+    display: flex;
+    background-color: rgba(0, 255, 234, 0.5);
+    align-items: center;
+    justify-content: center;
+    margin-top: 50%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+    width: 30%;
+    height: 70px;
+    text-align: center;
+    z-index: 2
+    ;
+}
+.card:hover{
+    box-shadow: 10px 10px whitesmoke;
+    transition: 0.5s ease-out;
+}
+
+/* ********** FOOTER ********** */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: 540px;
+    background-color: #0f0f0f;
+
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.linha{
+    background-color: rgba(250, 250, 250, 0.5);
+    width: 1px;
+    height: 150px;
+}
+.contato{
+    display: flex;
+    flex-direction: column;
+    color: #fafafa;
+    gap: 15px;
 }
